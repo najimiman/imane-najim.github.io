@@ -11,56 +11,70 @@
 <body style="background-color: #F6FBF4;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ityped@0.0.10"></script>
-  <div>
-      <nav class="navbar navbar-expand-lg" style="background-color: #82AAE3;">
+      <nav class="navbar navbar-expand-lg" style="background-color: #245953;">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#" style="color: #F6FBF4;">Navbar</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbarSupportedContent1">
-        <ul class="navbar-nav col-md-3 ms-md-auto">
+        <ul class="navbar-nav d-flex justify-content-center ms-md-auto">
         <li class="nav-item active">
-        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" style="color: #F6FBF4;" href="#home">Home</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#about">about</a>
+        <a class="nav-link" style="color: #F6FBF4;" href="#about">about</a>
         </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Experiences">Experiences</a>
+            <a class="nav-link" style="color: #F6FBF4;" href="#Experiences">Experiences</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
+              <a class="nav-link" style="color: #F6FBF4;" href="#Contact">Contact</a>
               </li>
         </ul>
         </div>
         </div>
         </nav>
       <!-- home -->
-      <section id="home" class="parallax-section">
-      <div class="row g-0 p-0">
-        <div class="col-md-6">
-          <img src="image3.gif" class="img-fluid" width="670px" height="500px"/>
-        </div>
-        <div class="col-md-6" style="background-color: #0a0e15;color: #F6FBF4;">
-             <div>
-                  <div class="text-center">
-                       <h4>welcome to my website</h4>
-                       <h1 >Hello, I am <strong>Imane</strong> <span class="ityped"></span></h1>
-                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nulla facilis necessitatibus atque veritatis ratione obcaecati ullam omnis. Aliquid est dolores obcaecati dolorum numquam necessitatibus aliquam assumenda quae qui temporibus.</p>
-                  </div>
-             </div>
-        </div>
-   </div>
-      </section>
+      <section id="hero" class="d-flex align-items-center">
 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+              <h1>Hello, I am <strong>Imane</strong><br> <span class="ityped"></span></h1>
+              <h2>We are team of talented designers making websites with Bootstrap</h2>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in"  data-aos-delay="200">
+              <img src="Code typing-bro3.png" class="img-fluid animated" alt="">
+              
+            </div>
+          </div>
+        </div>
+    
+      </section>
       <!-- about -->
       <section id="about" class="parallax-section">
-        <div class="container">
-    <div class="g-0 container">
-      <div id="aa" class="center w-75"></div>
-    </div>
-    </div>
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+    
+
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+            <img src="Data extraction-pana.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+            <div class="skills-content">
+              <section class="bar-graph bar-graph-vertical bar-graph-two" id="aa">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
      <div class="card-group">
         <div class="card">
           <img src="..." class="card-img-top" alt="...">
@@ -140,7 +154,6 @@
          </div>
     </div>
 </section>
-  </div>
 
       <script>
        const links = document.querySelectorAll("nav a");
@@ -177,8 +190,9 @@ links.forEach(link => {
           let tab='';
           // Loop to access all rows 
           for (let r of data) {
-              tab += ` 
-          <div class="bar" id="bb" style="height: ${r.nb}%;background-color:${r.color}">${r.nomtech} </div>
+              tab += ` <div class="bar-one bar-container" >
+          <div class="bar" id="bb" data-percentage="${r.nb}%" style="background-color:${r.color};height:${r.nb}%"></div>
+          <span class="year">${r.nomtech}</span></div>
           `;
           }
           // Setting innerHTML as tab variable
