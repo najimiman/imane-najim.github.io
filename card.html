@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #34495e;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 40px;
+  position: relative;
+  max-width: 250px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px black;
+}
+
+.card-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #6184a8;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.card-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: rgba(255, 255, 255, 0.596);
+  overflow-y: scroll;
+  transition: 0.8s ease;
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+  width: 70%;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+.filtering {
+    margin-bottom: 40px;
+}
+.filtering span {
+    border-bottom: 2px solid transparent;
+    color: #282b2d;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.filtering span:last-child {
+    margin: 0;
+}
+.filtering .active {
+    border-color: #ccde02;
+    color: #ccde02;
+}
+  </style>
+</head>
+<body>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script> -->
+    
+    <script>
+     $(function(){
+    $(".filtering").on("click", "span", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+}) 
+// mmmmmmmmmmmmmmmmmmmmmmmm
+const api_url = 
+          "https://script.google.com/macros/s/AKfycbzy-k1_jnr--Qsio5tfT_V8s1F4T6pBsoQUfYgyD14yrZqJb76n4JFOlRG6WRpvU0gL/exec";
+      
+      // Defining async function
+      async function getapi(url) {
+          
+          // Storing response
+          const response = await fetch(url);
+          
+          // Storing data in form of JSON
+          var data = await response.json();
+          console.log(data);
+          show(data);
+          $(".filtering").on("click", "span", function () {
+            var e = $(this).attr("data-filter");
+            console.log(e);
+       if(e=='*'){
+       show(data);
+       }
+       else if(e=='Mobile'){
+        let filteredResponse = data.filter(item => item.nom === e);
+        show(filteredResponse);
+       }
+       else{
+        let filteredResponse = data.filter(item => item.nom === e);
+        show(filteredResponse);
+       }
+    });
+          
+      }
+      getapi(api_url);
+     //function show table
+      function show(data) {
+          let tab='';
+          // Loop to access all rows 
+          for (let r of data) {
+              tab += ` <div class="card" >
+                <h2 class="card-title">${r.nom}</h2>
+                <img src="${r.image}" alt="">
+                <p class="card-desc">${r.lien}<br>${r.langageuse}</p>
+                </div>
+          `;
+          }
+          document.getElementById("aa").innerHTML = tab;
+         
+        }
+    </script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+<h1>Card Image with description on :hover</h1>
+<div class="filtering col-sm-12 text-center">
+    <span data-filter="*" class="active" id="all">All</span>
+    <span data-filter="Mobile" class="" id="mobile">Mobile</span>
+    <span data-filter="Web" class="" id="web">Web</span>
+</div>
+<div class="cards" id="aa">
+</div>
+</body>
+</html>

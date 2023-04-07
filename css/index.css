@@ -16,7 +16,7 @@ nav a.active {
     border: 2px solid black;
     border-radius: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     justify-content: space-between;
     align-items: flex-end;
     padding: 10px;
@@ -30,6 +30,14 @@ nav a.active {
     font-size: 14px;
     text-align: center;
   } */
+   #aa{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    /* border: 1px solid red; */
+  }
   #bb{
     /* animation: moving-bars 4s linear infinite; */
     -webkit-animation: show-bar-three-vertical 1.2s 0.3s forwards;
@@ -143,7 +151,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .section-title h2 {
@@ -205,7 +213,7 @@ section {
 
 .bar-graph-vertical .bar {
   border-radius: 3px;
-  bottom: 40px;
+  bottom: 50px;
   position: absolute;
   width: 40px;
 }
@@ -267,4 +275,88 @@ section {
 }
 #about .content p:last-child {
   margin-bottom: 0;
+}
+
+/* my application */
+
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 20px;
+  position: relative;
+  max-width: 250px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px #245953;
+}
+
+.card-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #408E91;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.card-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: rgba(255, 255, 255, 0.596);
+  overflow-y: scroll;
+  transition: 0.8s ease;
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+  width: 70%;
+}
+
+#h2title {
+  font-size: 2rem;
+  color: #3D8361;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+.filtering {
+    margin-bottom: 40px;
+}
+.filtering span {
+    border-bottom: 2px solid transparent;
+    color: #282b2d;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.filtering span:last-child {
+    margin: 0;
+}
+.filtering .active {
+    border-color: #ccde02;
+    /* color: #ccde02; */
+    color: #B3C99C;
 }
