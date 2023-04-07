@@ -360,3 +360,97 @@ section {
     /* color: #ccde02; */
     color: #B3C99C;
 }
+
+/* contact */
+  #h1contact {
+  margin: 0 0 20px;
+  font-weight: 400;
+  color: #245953;
+  }
+  #pcontacte {
+  margin: 0 0 5px;
+  }
+  .main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: #245953; */
+  }
+  form {
+  padding: 25px;
+  margin: 25px;
+  /* box-shadow: 0 2px 5px #245953;  */
+  box-shadow: 0 40px 60px -6px #245953;
+  /* background: #408e91c0;  */
+  }
+  .left-part .fas {
+  margin: 25px 10px 0;
+  font-size: 72px;
+  color: #245953;
+  }
+  .fab {
+    margin: 25px 10px 0;
+    font-size: 72px;
+    color: #245953;
+    }
+  .fa-github {
+  transform: rotate(-20deg);
+  }
+  .fa-at , .fa-mail-bulk{
+  transform: rotate(10deg);
+  }
+  #inputcontact, textarea {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #245953;
+  outline: none;
+  }
+  #inputcontact::placeholder {
+  color: #666;
+  }
+  button {
+    width: calc(100% - 18px);
+  padding: 10px;
+  border: none;
+  background: #245953; 
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  }
+  button:hover {
+  background: #2371a0;
+  }    
+  @media (min-width: 568px) {
+  .main-block {
+  flex-direction: row;
+  }
+  .left-part, form {
+  width: 50%;
+  }
+  .fa-github {
+  margin-top: 0;
+  margin-left: 20%;
+  }
+  .fa-at {
+  margin-top: -10%;
+  margin-left: 65%;
+  }
+  .fa-linkedin {
+  margin-top: 0%;
+  margin-left: 20%;
+  }
+  .fa-mail-bulk {
+  margin-top: 2%;
+  margin-left: 28%;
+  }
+  .fa-linkedin {
+    margin-top: 4%;
+    margin-left: 30%;
+    }
+    .fa-linkedin {
+      transform: rotate(-20deg);
+      }
+  }
