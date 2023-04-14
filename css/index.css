@@ -191,7 +191,7 @@ section {
   margin-bottom: 0;
 }
  /* Bar Graph Vertical */
- .bar-graph .year {
+ .bar-graph .nametechnologie {
   -webkit-animation: fade-in-text 2.2s 0.1s forwards;
   -moz-animation: fade-in-text 2.2s 0.1s forwards;
   animation: fade-in-text 2.2s 0.1s forwards;
@@ -218,7 +218,7 @@ section {
   width: 40px;
 }
 
-.bar-graph-vertical .year {
+.bar-graph-vertical .nametechnologie {
   bottom: 0;
   left: 0;
   margin: 0 auto;
