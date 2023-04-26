@@ -1,88 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
+
 <body style="background-color: #F6FBF4;">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ityped@0.0.10"></script>
-      <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #245953;">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="color: #F6FBF4;">Navbar</a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ityped@0.0.10"></script>
+
+  <div id="loading-snipper">
+    <div class="loading-container">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+    </div>
+</div>
+
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #245953;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: #F6FBF4;">Navbar</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarSupportedContent1">
+      </button>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent1">
         <ul class="navbar-nav d-flex justify-content-center ms-md-auto">
-        <li class="nav-item active">
-        <a class="nav-link" style="color: #F6FBF4;" href="#hero">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" style="color: #F6FBF4;" href="#about">about</a>
-        </li>
+          <li class="nav-item active">
+            <a class="nav-link" style="color: #F6FBF4;" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #F6FBF4;" href="#about">about</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" style="color: #F6FBF4;" href="#Experiences">Experiences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: #F6FBF4;" href="#Contact">Contact</a>
-              </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #F6FBF4;" href="#Contact">Contact</a>
+          </li>
         </ul>
-        </div>
-        </div>
-        </nav>
-      <!-- home -->
-      <section id="hero" class="d-flex align-items-center">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-              <h1>Hello, I am <strong>Imane</strong><br> <span class="ityped"></span></h1>
-              <h2>Passionate about coding, and developing good responsive web and mobile applications.</h2>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in"  data-aos-delay="200">
-              <img src="images/Code typing-bro3.png" class="img-fluid animated" alt="">
-              
-            </div>
-          </div>
-        </div>
-    
-      </section>
-      <!-- about -->
-      <section id="about" class="parallax-section">
-        <div class="section-title">
-          <h2>About Us</h2>
-        </div>
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-            <img src="images/Data extraction-pana.png" class="img-thumbnail" alt="">
-          </div>
-          <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
-            <!-- <h3>Skills</h3> -->
-            <div class="skills-content">
-              <h2 id="h2title">Skills</h2>
-              <div class="bar-graph bar-graph-vertical bar-graph-two" id="aa"></div>
-            </div>
-
-          </div>
-        </div>
-
       </div>
-      <h2 id="h2title">PROJECT EXECUTED</h2>
-      <div class="filtering col-sm-12 text-center">
-          <span data-filter="*" class="active">All</span>
-          <span data-filter="Mobile" class="">Mobile</span>
-          <span data-filter="Web" class="">Web</span>
+    </div>
+  </nav>
+  <!-- home -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <h1>Hello, I am <strong>Imane</strong><br> <span class="ityped"></span></h1>
+          <h2>Passionate about coding, and developing good responsive web and mobile applications.</h2>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/Code typing-bro3.png" class="img-fluid animated" alt="">
+
+        </div>
       </div>
-      <div class="cards" id="application">
+    </div>
+
+  </section>
+  <!-- about -->
+  <section id="about" class="parallax-section">
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+          <img src="images/Data extraction-pana.png" class="img-thumbnail" alt="">
+        </div>
+        <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+          <!-- <h3>Skills</h3> -->
+          <div class="skills-content">
+            <h2 id="h2title">Skills</h2>
+            <div class="bar-graph bar-graph-vertical bar-graph-two" id="aa"></div>
+          </div>
+
+        </div>
       </div>
+
+    </div>
+    <h2 id="h2title">PROJECT EXECUTED</h2>
+    <div class="filtering col-sm-12 text-center">
+      <span data-filter="*" class="active">All</span>
+      <span data-filter="Mobile" class="">Mobile</span>
+      <span data-filter="Web" class="">Web</span>
+    </div>
+    <div class="cards" id="application">
+    </div>
   </section>
   <!-- Experiences -->
   <section id="Experiences" class="parallax-section">
@@ -90,104 +110,102 @@
       <h2>Resume</h2>
     </div> -->
     <div class="container">
-         <div class="row">
+      <div class="row">
 
-              <div class="col-md-6 col-sm-6" style="border-left: 5px solid #245953;">
-                <div>
-                  <div>
-                       <h1 style="color: #245953;">My Experiences</h1>
-                  </div>
+        <div class="col-md-6 col-sm-6" style="border-left: 5px solid #245953;">
+          <div>
+            <div>
+              <h1 style="color: #245953;">My Experiences</h1>
+            </div>
 
-                  <div>
-                       <div>
-                            <h4>
-                              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-                              <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
-                            </svg> -->
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
-                              <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                            </svg> -->
-                            <i class="fas fa-laptop-code" width="10" height="10"></i>
-                            Language Center Web Application<br><small> 2022 04 - 2022 05</small></h4>
-                            <p>Langage using HTML CSS ASP.NET C# SQL SERVER...</p>
-                       </div>
-                  </div>
-             </div>
+            <div>
+              <div>
+                <h4>
+                  <i class="fas fa-laptop-code" width="10" height="10"></i>
+                  Language Center Web Application<br><small> 2022 04 - 2022 05</small>
+                </h4>
+                <p>Langage using HTML CSS ASP.NET C# SQL SERVER...</p>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="col-md-6 col-sm-6"style="border-left: 5px solid #245953;">
-                   <div>
-                        <div>
-                             <h1 style="color: #245953;">My Education</h1>
-                        </div>
+        <div class="col-md-6 col-sm-6" style="border-left: 5px solid #245953;">
+          <div>
+            <div>
+              <h1 style="color: #245953;">My Education</h1>
+            </div>
 
-                        <div>
-                             <div>
-                                  <h4>
-                                  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
-                                    <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                  </svg> -->
-                                  <i class="fas fa-graduation-cap" width="10" height="10"></i>
-                                  Diploma of Specialized Technician in Computer Development Techniques from ISMONTIC in Tangier.<br><small>2020 - 2022</small></h4>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                             </div>
-                        </div>
-                   </div>
+            <div>
+              <div>
+                <h4>
+                  <i class="fas fa-graduation-cap" width="10" height="10"></i>
+                  Diploma of Specialized Technician in Computer Development Techniques from ISMONTIC in
+                  Tangier.<br><small>2020 - 2022</small>
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
+            </div>
+          </div>
+        </div>
 
-         </div>
+      </div>
     </div>
-</section>
-<!-- contactttttttt -->
-<div id="Contact" class="parallax-section">
-  <div class="section-title">
-    <h2>Contact Us</h2>
-  </div>
-  <div class="main-block">
-    <div class="left-part">
-      <!-- <i class="fas fa-envelope"><a href=""></a></i> -->
-      <a href="https://github.com/najimiman"><i class="fab fa-github"></i></a>
-      <!-- <a href="mailto:iman.najim.deve@gmail.com"><i class="fas fa-at"></i></a> -->
-      <a href="https://mail.google.com/mail/u/1/?fs=1&to=iman.najim.deve@gmail.com&tf=cm"><i class="fas fa-at"></i></a>
-      <i class="fas fa-mail-bulk"></i>
-      <a href="https://www.linkedin.com/in/najim-iman-178117267/"><i class="fab fa-linkedin"></i></a>
+  </section>
+  <!-- contactttttttt -->
+  <div id="Contact" class="parallax-section">
+    <div class="section-title">
+      <h2>Contact Us</h2>
     </div>
-    <form>
-      <!-- <h1 id="h1contact">Contact Us</h1> -->
-      <div class="info">
-        <input class="fname" id="inputcontact" type="text"  name="nom" placeholder="Full name *">
-        <input type="email" name="email" id="inputcontact" placeholder="Email *">
-        <input type="tel" name="phone" id="inputcontact" placeholder="Phone number">
-        <input type="datetime-local" name="mydate" id="mydate" hidden>
-        <!-- <input type="text" name="name" id="inputcontact" placeholder="Website"> -->
+    <div class="main-block">
+      <div class="left-part">
+        <!-- <i class="fas fa-envelope"><a href=""></a></i> -->
+        <a href="https://github.com/najimiman"><i class="fab fa-github"></i></a>
+        <!-- <a href="mailto:iman.najim.deve@gmail.com"><i class="fas fa-at"></i></a> -->
+        <a href="https://mail.google.com/mail/u/1/?fs=1&to=iman.najim.deve@gmail.com&tf=cm"><i
+            class="fas fa-at"></i></a>
+        <i class="fas fa-mail-bulk"></i>
+        <a href="https://www.linkedin.com/in/najim-iman-178117267/"><i class="fab fa-linkedin"></i></a>
       </div>
-      <p id="pcontacte">Message</p>
-      <div>
-        <textarea rows="4" name="message" placeholder="message *"></textarea>
-      </div>
-      <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="margin: auto;">
-        <!-- <img src="message1.png" alt="Image" width="450" height="250"> -->
-        <!-- <i class="fas fa-thumbs-up fa-lg" style="color: #388074;" width="100" height="100"></i> -->
-        <i class="fas fa-thumbs-up" style="color: #388074;" >  Thank you</i>
-      </div>
-      <!-- <div class="modal-footer">
+      <form>
+        <!-- <h1 id="h1contact">Contact Us</h1> -->
+        <div class="info">
+          <input class="fname" id="inputcontact" type="text" name="nom" placeholder="Full name *">
+          <input type="email" name="email" id="inputcontact" placeholder="Email *">
+          <input type="tel" name="phone" id="inputcontact" placeholder="Phone number">
+          <input type="datetime-local" name="mydate" id="mydate" hidden>
+          <!-- <input type="text" name="name" id="inputcontact" placeholder="Website"> -->
+        </div>
+        <p id="pcontacte">Message</p>
+        <div>
+          <textarea rows="4" name="message" placeholder="message *"></textarea>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="margin: auto;">
+                <!-- <img src="message1.png" alt="Image" width="450" height="250"> -->
+                <!-- <i class="fas fa-thumbs-up fa-lg" style="color: #388074;" width="100" height="100"></i> -->
+                <i class="fas fa-thumbs-up" style="color: #388074;"> Thank you</i>
+              </div>
+              <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
        -->
+            </div>
+          </div>
+        </div>
+        <button type="submit" id="btnC" data-bs-toggle="" data-bs-target="#exampleModal">Submit</button>
+      </form>
     </div>
   </div>
-</div>
-      <button type="submit" id="btnC" data-bs-toggle="" data-bs-target="#exampleModal">Submit</button>
-    </form>
-  </div>
-</div>
-<script src="myscript.js"></script>  
+  <script src="myscript.js"></script>
+  <!-- </div> -->
+  <!-- </div> -->
 </body>
+
 </html>
