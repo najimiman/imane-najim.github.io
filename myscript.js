@@ -34,7 +34,7 @@ function show(data) {
    // Loop to access all rows 
    for (let r of data) {
       tab += ` <div class="bar-one bar-container" >
-   <div class="bar" id="bb" data-percentage="${r.nb}%" style="background-color:${r.color};height:${r.nb}%"></div>
+   <div class="bar" id="bb" data-percentage="${r.nb}%" style="background-color:${r.color};height:${r.nb}%;"></div>
    <span class="nametechnologie">${r.nomtech}</span></div>
    `;
    }

@@ -44,6 +44,7 @@ nav a.active {
 #bb {
   /* animation: moving-bars 4s linear infinite; */
   -webkit-animation: show-bar-three-vertical 1.2s 0.3s forwards;
+  text-align: center;
 }
 
 /* @keyframes moving-bars {
@@ -67,6 +68,7 @@ nav a.active {
   width: 100%;
   height: 80vh;
   background: #245953;
+  box-sizing: content-box;
 }
 
 #hero .container {
@@ -89,6 +91,26 @@ nav a.active {
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#hero .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  /* font: bold; */
+  color: #282b2d;
+  background: #c6cbd5;
+}
+
+#hero .btn-get-started:hover {
+  background: #408E91;
+  color: floralwhite;
 }
 
 @media (max-width: 991px) {

@@ -13,9 +13,17 @@
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body style="background-color: #F6FBF4;">
+  <!-- <script src="assets/vendor/aos/aos.js"></script> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
@@ -32,7 +40,8 @@
 
   <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #245953;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color: #F6FBF4;">Navbar</a>
+      <!-- <img class="navbar-brand" href="#" style="color: #F6FBF4;">Navbar</a> -->
+      <img src="images/nn.png" alt="" width="50px" style="object-fit: contain;" height="50px">
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -58,21 +67,20 @@
   </nav>
   <!-- home -->
   <section id="hero" class="d-flex align-items-center">
-
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-          data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>Hello, I am <strong>Imane</strong><br> <span class="ityped"></span></h1>
           <h2>Passionate about coding, and developing good responsive web and mobile applications.</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a class="btn-get-started scrollto" href="images/cv iman najim 2023.pdf" download="" role="button">Download CV</a>
+          </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <img src="images/Code typing-bro3.png" class="img-fluid animated" alt="">
-
         </div>
       </div>
     </div>
-
   </section>
   <!-- about -->
   <section id="about" class="parallax-section">
@@ -101,7 +109,7 @@
       <span data-filter="Mobile" class="">Mobile</span>
       <span data-filter="Web" class="">Web</span>
     </div>
-    <div class="cards" id="application">
+    <div class="cards" id="application" data-aos="flip-up">
     </div>
   </section>
   <!-- Experiences -->
@@ -110,9 +118,9 @@
       <h2>Resume</h2>
     </div> -->
     <div class="container">
-      <div class="row">
+      <div class="row" data-aos="fade-up">
 
-        <div class="col-md-6 col-sm-6" style="border-left: 5px solid #245953;">
+        <div class="col-md-6 col-sm-6" style="border-left: 5px solid #245953;" data-aos="fade-right" data-aos-delay="100">
           <div>
             <div>
               <h1 style="color: #245953;">My Experiences</h1>
@@ -130,7 +138,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-sm-6" style="border-left: 5px solid #245953;">
+        <div class="col-md-6 col-sm-6" style="border-left: 5px solid #245953;" data-aos="fade-left" data-aos-delay="100">
           <div>
             <div>
               <h1 style="color: #245953;">My Education</h1>
@@ -153,12 +161,12 @@
     </div>
   </section>
   <!-- contactttttttt -->
-  <div id="Contact" class="parallax-section">
+  <div id="Contact" class="parallax-section" data-aos="fade-up">
     <div class="section-title">
       <h2>Contact Us</h2>
     </div>
     <div class="main-block">
-      <div class="left-part">
+      <div class="left-part" data-aos="zoom-in" data-aos-delay="100">
         <!-- <i class="fas fa-envelope"><a href=""></a></i> -->
         <a href="https://github.com/najimiman"><i class="fab fa-github"></i></a>
         <!-- <a href="mailto:iman.najim.deve@gmail.com"><i class="fas fa-at"></i></a> -->
