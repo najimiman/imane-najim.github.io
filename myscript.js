@@ -126,11 +126,11 @@ form.addEventListener('submit', (e) => {
    submitButton.addEventListener('click', toggleModal);
 })
 
-// var loader = document.getElementById('loading-snipper');
-// window.addEventListener("load", function () {
-//    setTimeout(function () {
-//       loader.style.display = "none";
-//    }, 2000); // 2000 milliseconds = 2 seconds
-// });
+var loader = document.getElementById('loading-snipper');
+window.addEventListener("load", function () {
+   setTimeout(function () {
+      loader.style.display = "none";
+   }, 2000); // 2000 milliseconds = 2 seconds
+});
 
 
