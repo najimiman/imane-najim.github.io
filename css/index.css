@@ -410,11 +410,14 @@ form {
 }
 
 .left-part .fas {
-  margin: 25px 10px 0;
+  margin: 0px 10px 0;
   font-size: 72px;
   color: #245953;
   animation: example 2s ease-in-out infinite alternate-reverse both;
 }
+/* .fas .fa-at {
+  margin: 0px 10px;
+} */
 
 .fab {
   margin: 25px 10px 0;
